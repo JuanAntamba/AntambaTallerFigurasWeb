@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Taller Figuras Web</title>
+</head>
+<body>
+<h1>Crear Figura Java</h1>
+<form action="/figuras/crearJava" method="get">
+    <label>Tipo de Figura:</label>
+    <select name="tipo">
+        <option value="Circulo">Círculo</option>
+        <option value="Rectangulo">Rectángulo</option>
+        <option value="Triangulo">Triángulo</option>
+    </select>
+    <br><br>
+
+    <label>Parámetros (separados por coma):</label><br>
+    <input type="text" name="params" placeholder="ej: 5 o 4,6 o 3,4,3,4,5"><br><br>
+
+    <button type="submit">Crear Figura Java</button>
+</form>
+
+<hr>
+
+<h1>Crear Figura Groovy</h1>
+<form action="/figuras/crearGroovy" method="post">
+    <label>Clase Groovy:</label><br>
+    <textarea name="codigo" rows="10" cols="50">// Pega aquí el código Groovy</textarea><br><br>
+
+    <label>Parámetros (separados por coma):</label><br>
+    <input type="text" name="params" value="3"><br><br>
+
+    <button type="submit">Crear Figura Groovy</button>
+</form>
+</body>
+</html>
+
